@@ -1,0 +1,12 @@
+@import './../../../styles/global.scss';
+
+.numbers {
+  justify-self: center;
+  display: flex;
+  gap: 80px 180px;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 180px;
+  box-sizing: border-box;
+  justify-content: center;
+}

@@ -1,0 +1,17 @@
+@import './../../../styles/global.scss';
+
+.info {
+  max-width: 890px;
+  align-self: center;
+  &__text {
+    @include mainFontSemibold;
+    font-size: 32px;
+    line-height: 120%;
+    color: $blackColorText;
+    text-align: center;
+    margin: 0;
+    &_red {
+      color: $redColorText;
+    }
+  }
+}
