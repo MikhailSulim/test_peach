@@ -1,0 +1,42 @@
+@import './../../../styles/global.scss';
+
+.promo {
+  background-image: url('./../../../images/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  max-width: 100%;
+  display: flex;
+  padding-left: 70px;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 709px;
+  }
+
+  &__title {
+    @include mainFontSemibold;
+    line-height: 100%;
+    font-size: 56px;
+    color: $blackColorText;
+    margin: 0;
+  }
+
+  &__button {
+    @include mainFontSemibold;
+    color: $whiteColorText;
+    border-radius: 8px;
+    background-color: $redColorText;
+    padding: 18px 28px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $redLightColor;
+    }
+  }
+}
