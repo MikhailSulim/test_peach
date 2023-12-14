@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('Proxima_Nova_Condensed_Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('Proxima_Nova_Condensed_Semibold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Proxima';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('Proxima_Nova_Condensed_Black.otf') format('opentype');
+}

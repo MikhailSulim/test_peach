@@ -1,0 +1,32 @@
+@import './../../styles/global.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 70px;
+  max-width: 1250px;
+  &__logo svg {
+    max-width: 125px;
+    max-height: 25px;
+  }
+  &__nav-menu {
+    display: flex;
+    gap: 20px;
+  }
+  &__nav-item {
+    text-decoration: none;
+    @include mainFontSemibold;
+    color: $blackColorText;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

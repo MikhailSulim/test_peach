@@ -1,0 +1,17 @@
+@mixin mainFontRegular {
+  font-family: 'Proxima', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin mainFontSemibold {
+  font-family: 'Proxima', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin mainFontBlack {
+  font-family: 'Proxima', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
