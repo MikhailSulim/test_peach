@@ -1,9 +1,15 @@
 @import './../../../styles/global.scss';
 
 .info {
-  max-width: 890px;
+  max-width: 1110px;
+  width: 100%;
   align-self: center;
+  padding: 100px 110px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
+
   &__text {
+    
     @include mainFontSemibold;
     font-size: 32px;
     line-height: 120%;

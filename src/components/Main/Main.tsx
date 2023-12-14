@@ -8,6 +8,7 @@ import { Mission } from './Mission/Mission';
 import { Business } from './Business/Business';
 import { Benefits } from './Benefits/Benefits';
 import { Gallery } from './Gallery/Gallery';
+import { Map } from './Map/Map';
 
 /**
  * Главный компонент страницы, содержит в себе весь контент
@@ -19,6 +20,7 @@ export const Main: React.FC = () => {
       <Promo />
       <Info/>
       <Numbers/>
+      <Map />
       <Mission/>
       <Business/>
       <Benefits/>

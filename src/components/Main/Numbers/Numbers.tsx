@@ -1,11 +1,40 @@
 import { NumbersBlock } from '../../NumbersBlock/NumbersBlock';
 import './Numbers.scss';
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 export const Numbers: React.FC = () => {
+  const numbersRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observerCallback: IntersectionObserverCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    };
+    const options: IntersectionObserverInit = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5, // Adjust this threshold as needed
+    };
+
+    const observer = new IntersectionObserver(observerCallback, options);
+
+    if (numbersRef.current) {
+      observer.observe(numbersRef.current);
+    }
+
+    return () => {
+      if (numbersRef.current) {
+        observer.unobserve(numbersRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="numbers">
+    <section className="numbers" ref={numbersRef}>
       <NumbersBlock
         title="30 лет"
         symbol=">"

@@ -31,10 +31,11 @@
       border: none;
       cursor: pointer;
       border-radius: 50%;
+      transition: all 0.3s ease-in-out;
       &:disabled {
-          background-color: $buttonBGColor;
-          color: $redColor;
-
+        background-color: $buttonBGColor;
+        color: $redColor;
+        cursor: default;
       }
       & svg {
         width: 56px;
@@ -75,7 +76,7 @@
       height: 6px;
       cursor: pointer;
       background-color: rgba(0, 0, 0, 0.1);
-
+      transition: all 0.3s ease-in-out;
       &_current {
         background-color: $redColor;
       }

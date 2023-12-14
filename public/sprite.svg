@@ -251,4 +251,12 @@
       stroke-width="2"
     />
   </symbol>
+
+  <symbol id='arrDown' viewBox="0 0 24 24">
+    <path 
+      fill="none" 
+      d="M2.10156 7.99683L12.1016 16.0179L22.1016 7.99683" 
+      stroke="currentColor" 
+      stroke-width="3"/>
+  </symbol> 
 </svg>;

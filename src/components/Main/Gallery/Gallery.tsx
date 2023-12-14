@@ -35,12 +35,9 @@ export const Gallery: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    if (sliderRef.current)
-      console.log(
-        (sliderRef.current.style.transform = `translateX(${
-          -100 * currentImage
-        }%)`)
-      );
+    if (sliderRef.current) {
+      sliderRef.current.style.transform = `translateX(${-100 * currentImage}%)`;
+    }
   }, [currentImage]);
 
   const galleryPagination = useMemo(
@@ -49,6 +46,7 @@ export const Gallery: React.FC = () => {
         <div ref={sliderRef} className="gallery__slider-container">
           {images.map((item) => (
             <img
+              loading={'lazy'}
               className="gallery__slider-image"
               key={item}
               src={item}
