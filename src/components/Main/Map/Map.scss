@@ -4,7 +4,10 @@
   display: flex;
   flex-direction: column;
   gap: 90px;
-  align-items: center;width: 100%;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 
   &__header {
     display: flex;
@@ -13,8 +16,56 @@
     justify-content: space-between;
     padding: 28px 70px 0 70px;
     box-sizing: border-box;
+    background-color: $whiteBGColor;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+    z-index: 5;
   }
+
+  &__drawer {
+    z-index: 2;
+    width: 100%;
+    min-height: 100px;
+    position: absolute;
+    padding: 30px 0px;
+    box-sizing: border-box;
+
+    top: -200px;
+    left: 0;
+
+    background-color: $whiteBGColor;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    &_visible {
+      top: 100px;
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 24px;
+    }
+    &-column {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      &-title {
+        margin: 0;
+        color: $blackColorText;
+        @include secondaryFontSemibold;
+        font-size: 18px;
+        line-height: 20px; /* 111.111% */
+      }
+      &-item {
+        margin: 0;
+        color: $blackColorText;
+        @include secondaryFontRegular;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  }
+
   &__btn {
     max-width: 185px;
     display: flex;
@@ -23,6 +74,7 @@
     color: $blackColorText;
     cursor: pointer;
     & svg {
+      transition: all 0.3s ease-in-out;
       width: 24px;
       height: 24px;
     }
@@ -32,11 +84,22 @@
       font-size: 24px;
       line-height: 100%; /* 24px */
     }
+
+    &_drawer-visible {
+      & svg {
+        transform: rotate(180deg);
+      }
+    }
   }
   &__regions {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    transition: all 0.3s ease-in-out;
+    &_drawer-visible {
+      opacity: 0.1;
+      pointer-events: none;
+    }
     &-item {
       margin: 0;
       padding-bottom: 28px;
@@ -56,19 +119,20 @@
   &__map {
     max-width: 1190px;
     max-height: 604px;
-    & svg {
-        width: 100%;
-        height: 100%;
-
+    transition: all 0.3s ease-in-out;
+    &_drawer-visible {
+      opacity: 0.3;
     }
-
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
-
 text {
-    @include mainFontSemibold;
-    color: $blackColorText;
-    line-height: 100%;
-    transform: translate(5px, -10px); 
+  @include mainFontSemibold;
+  color: $blackColorText;
+  line-height: 100%;
+  transform: translate(5px, -10px);
 }

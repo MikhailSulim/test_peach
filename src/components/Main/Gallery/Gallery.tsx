@@ -3,13 +3,18 @@ import './Gallery.scss';
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 
+/**
+ * Photo slider component
+ * @returns {JSX.Element}
+ */
+
 export const Gallery: React.FC = () => {
   const [images, setImages] = useState<string[]>([]);
   const [currentImage, setCurrentImage] = useState<number>(0);
 
   useEffect(() => {
     const context = (require as any).context(
-      './../../../images/slides',
+      './../../../../public/images/slides',
       false,
       /\.(png|jpe?g|svg)$/
     );
@@ -17,7 +22,6 @@ export const Gallery: React.FC = () => {
       .keys()
       .map((key: string) => context(key));
     setImages(allImages);
-    // console.log(allImages, images);
   }, []);
 
   const handlePrev = () => {

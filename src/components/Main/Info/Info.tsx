@@ -2,7 +2,7 @@ import './Info.scss';
 
 import React from 'react';
 
-export const Info = () => {
+export const Info: React.FC = () => {
   return (
     <section className="info">
       <p className="info__text">

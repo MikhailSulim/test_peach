@@ -3,7 +3,7 @@ import './Promo.scss';
 import React from 'react';
 
 /**
- * Render the Promo section.
+ * Титульный блок
  *
  * @returns JSX.Element
  */
@@ -14,7 +14,7 @@ export const Promo: React.FC = (): JSX.Element => {
         <h1 className="promo__title">
           Поставщик услуг цифровой трансформации и&nbsp;кибербезопасности
         </h1>
-        <Link to="" className="promo__button">
+        <Link to="https://softline.ru" className="promo__button">
           На сайт
         </Link>
       </div>

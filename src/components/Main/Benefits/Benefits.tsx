@@ -3,6 +3,11 @@ import './Benefits.scss';
 
 import React from 'react';
 
+/**
+ * Renders the Benefits section.
+ *
+ * @returns JSX.Element
+ */
 export const Benefits: React.FC = () => {
   return (
     <section className="benefits">
@@ -10,7 +15,10 @@ export const Benefits: React.FC = () => {
         <h2 className="benefits__compensation-title">Компенсационный пакет</h2>
         <div className="benefits__container">
           <Benefit iconId="dms" text="Дмс" />
-          <Benefit iconId="cake" text="Выходной&#10;в день рождения" />
+          <Benefit
+            iconId="cake"
+            text="Выходной&#10;в день рождения"
+          />
           <Benefit iconId="phone" text="Корпоративная мобильная связь" />
           <Benefit iconId="sport" text="Корпоративные скидки на спорт" />
           <Benefit iconId="hands" text="LTI" />
@@ -18,8 +26,12 @@ export const Benefits: React.FC = () => {
       </div>
 
       <div className="benefits__extra">
-        <h3 className="benefits__extra-title">Программа дополнительной мотивации<br/>
-          <span className="benefits__extra-title_red">доплата 12% от суммы</span>
+        <h3 className="benefits__extra-title">
+          Программа дополнительной мотивации
+          <br />
+          <span className="benefits__extra-title_red">
+            доплата 12% от суммы
+          </span>
         </h3>
         <div className="benefits__container">
           <Benefit iconId="printer" text="Оргтехники" />

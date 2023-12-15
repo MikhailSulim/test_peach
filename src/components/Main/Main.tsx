@@ -18,13 +18,13 @@ export const Main: React.FC = () => {
   return (
     <main className="main">
       <Promo />
-      <Info/>
-      <Numbers/>
+      <Info />
+      <Numbers />
       <Map />
-      <Mission/>
-      <Business/>
-      <Benefits/>
-      <Gallery/>
+      <Mission />
+      <Business />
+      <Benefits />
+      <Gallery />
     </main>
   );
 };

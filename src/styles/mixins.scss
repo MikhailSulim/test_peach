@@ -1,17 +1,29 @@
 @mixin mainFontRegular {
-  font-family: 'Proxima', sans-serif;
+  font-family: 'Proxima Nova Condensed', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 @mixin mainFontSemibold {
-  font-family: 'Proxima', sans-serif;
+  font-family: 'Proxima Nova Condensed', sans-serif;
   font-style: normal;
   font-weight: 600;
 }
 
 @mixin mainFontBlack {
-  font-family: 'Proxima', sans-serif;
+  font-family: 'Proxima Nova Condensed', sans-serif;
   font-style: normal;
   font-weight: 900;
+}
+
+@mixin secondaryFontRegular {
+  font-family: 'Proxima Nova', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin secondaryFontSemibold {
+  font-family: 'Proxima Nova', sans-serif;
+  font-style: normal;
+  font-weight: 600;
 }

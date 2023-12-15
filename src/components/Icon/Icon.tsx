@@ -7,7 +7,7 @@ type IconProps = {
 const Icon: React.FC<IconProps> = ({ iconId }) => {
   return (
     <svg >
-      <use xlinkHref={`sprite.svg#${iconId}`} />
+      <use xlinkHref={`images/sprite.svg#${iconId}`} />
     </svg>
   );
 };

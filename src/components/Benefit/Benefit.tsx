@@ -6,7 +6,7 @@ import React from 'react';
 /**
  * Renders a benefit component with an icon and text.
  * @param props - The properties for the benefit component.
- * @param props.iconId - The ID of the icon to be displayed.
+ * @param props.iconId - The ID of the icon from the sprite to be displayed.
  * @param props.text - The text to be displayed.
  * @returns The rendered benefit component.
  */
