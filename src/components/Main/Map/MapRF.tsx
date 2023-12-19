@@ -274,7 +274,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
       </g>
 
       <g id="cities">
-        <CitiesGroup name="dv">
+        <CitiesGroup key="dv" name="dv">
           <g
             fill="none"
             width="5"
@@ -306,7 +306,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           </g>
         </CitiesGroup>
 
-        <CitiesGroup name="siberia">
+        <CitiesGroup key="siberia" name="siberia">
           <g
             fill="none"
             width="5"
@@ -389,7 +389,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           </g>
         </CitiesGroup>
 
-        <CitiesGroup name="ural">
+        <CitiesGroup key="ural" name="ural">
           <g
             fill="none"
             width="5"
@@ -489,7 +489,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           </g>
         </CitiesGroup>
 
-        <CitiesGroup name="nw">
+        <CitiesGroup key="nw" name="nw">
           <g
             fill="none"
             width="5"
@@ -526,7 +526,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           </g>
         </CitiesGroup>
 
-        <CitiesGroup name="moscow">
+        <CitiesGroup key="moscow" name="moscow">
           <g
             fill="none"
             width="5"
@@ -546,7 +546,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           </g>
         </CitiesGroup>
 
-        <CitiesGroup name="center">
+        <CitiesGroup key="center" name="center">
           <g fill="none" width="5" height="5" transform="translate(179 196.9)">
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
@@ -595,7 +595,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           </g>
         </CitiesGroup>
 
-        <CitiesGroup name="volga">
+        <CitiesGroup key="volga" name="volga">
           <g
             fill="none"
             width="5"
@@ -683,7 +683,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           </g>
         </CitiesGroup>
 
-        <CitiesGroup name="south">
+        <CitiesGroup key="south" name="south">
           <g
             fill="none"
             width="5"

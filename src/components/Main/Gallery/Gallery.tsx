@@ -2,6 +2,7 @@ import Icon from '../../Icon/Icon';
 import './Gallery.scss';
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useSwipeable } from 'react-swipeable';
 
 /**
  * Photo slider component
@@ -24,6 +25,8 @@ export const Gallery: React.FC = () => {
     setImages(allImages);
   }, []);
 
+  const sliderRef = useRef<HTMLDivElement | null>(null);
+
   const handlePrev = () => {
     if (currentImage > 0) {
       setCurrentImage((prevImage) => prevImage - 1);
@@ -36,7 +39,13 @@ export const Gallery: React.FC = () => {
     }
   };
 
-  const sliderRef = useRef<HTMLDivElement | null>(null);
+  const handlerSwipe = useSwipeable({
+    onSwipedLeft: () => handleNext(),
+    onSwipedRight: () => handlePrev(),
+    swipeDuration: 500,
+    preventScrollOnSwipe: true,
+    trackMouse: true,
+  });
 
   useEffect(() => {
     if (sliderRef.current) {
@@ -46,7 +55,7 @@ export const Gallery: React.FC = () => {
 
   const galleryPagination = useMemo(
     () => (
-      <div className="gallery__slider">
+      <div className="gallery__slider" {...handlerSwipe}>
         <div ref={sliderRef} className="gallery__slider-container">
           {images.map((item) => (
             <img

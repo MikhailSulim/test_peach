@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
           Импортозамещение
         </Link>
         <Link className="header__nav-item" to="https://softline.ru">
-          Цифровая трансформация
+          Цифровая&nbsp;трансформация
         </Link>
       </nav>
     </header>

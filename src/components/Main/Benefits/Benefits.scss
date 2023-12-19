@@ -1,24 +1,31 @@
 @import './../../../styles/global.scss';
 
 .benefits {
-  margin: 0 70px;
-  padding: 80px 110px;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 30px 80px;
   box-sizing: border-box;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-direction: column;
-  gap: 145px;
+  justify-content: center;
+  gap: 70px;
   &__container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 25px 16px;
   }
 
   &__compensation {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    border-bottom: 1px solid rgba(#000, 0.1);
+    padding: 50px 48px 75px;
+    box-sizing: border-box;
     &-title {
       color: $blackColorText;
       text-align: center;
@@ -41,8 +48,116 @@
       font-size: 40px;
       line-height: 120%; /* 48px */
       white-space: pre-wrap;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
       &_red {
         color: $redColorText;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .benefits {
+    max-width: 980px;
+    padding: 30px 25px 65px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.06);
+    gap: 55px;
+    &__container {
+      gap: 25px 14px;
+    }
+
+    &__compensation {
+      gap: 48px;
+      padding: 40px 30px 60px;
+      &-title {
+        font-size: 48px;
+      }
+    }
+
+    &__extra {
+      gap: 46px;
+      &-title {
+        font-size: 38px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .benefits {
+    max-width: 700px;
+    padding: 30px 10px 50px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.06);
+    gap: 30px;
+    &__container {
+      gap: 25px 12px;
+    }
+
+    &__compensation {
+      gap: 42px;
+      padding: 40px 10px;
+      &-title {
+        font-size: 44px;
+      }
+    }
+
+    &__extra {
+      gap: 40px;
+      &-title {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .benefits {
+    max-width: 480px;
+    padding: 30px 0px 30px;
+    box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.06);
+    gap: 24px;
+    &__container {
+      gap: 25px 10px;
+    }
+
+    &__compensation {
+      gap: 40px;
+      padding: 32px 10px;
+      &-title {
+        font-size: 36px;
+      }
+    }
+
+    &__extra {
+      gap: 32px;
+      &-title {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .benefits {
+    max-width: 290px;
+    padding: 30px 0px 24px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.06);
+    gap: 24px;
+
+    &__compensation {
+      gap: 40px;
+      padding: 24px 5px;
+      &-title {
+        font-size: 28px;
+      }
+    }
+
+    &__extra {
+      gap: 25px;
+      &-title {
+        font-size: 22px;
       }
     }
   }

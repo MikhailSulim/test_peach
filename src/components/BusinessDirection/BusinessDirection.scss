@@ -3,33 +3,30 @@
 .direction {
   position: relative;
   max-width: 615px;
-  height: 260px;
+  width: 100%;
+  aspect-ratio: 615/260;
   overflow: hidden;
+  background: lightgray 0px 0px / 100% 100.385% no-repeat;
 
-  &:hover &__overlay {
-    top: 0;
-    justify-content: flex-start;
-    height: 100%;
+  &_full {
+    &:hover .direction__overlay {
+      top: 0;
+      justify-content: flex-start;
+      height: 100%;
+    }
+
+    &:hover .direction__text_full {
+      opacity: 1;
+      display: block;
+      visibility: visible;
+    }
   }
 
-  &:hover &__text {
-    opacity: 1;
-    display: block;
-    visibility: visible;
-  }
-
-  &__background {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-  }
   &__overlay {
     position: absolute;
     width: 100%;
-    height: 80px;
-    top: 180px;
+    height: 30.77%;
+    top: 69.23%;
     padding: 28px 20px;
     display: flex;
     flex-direction: column;
@@ -47,8 +44,12 @@
     line-height: 100%; /* 24px */
     white-space: pre-wrap;
     z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
-  &__text {
+  &__text_full {
     display: none;
     margin: 0;
     color: $whiteColorText;
@@ -59,5 +60,101 @@
     opacity: 0;
     transition: 0.6s all ease-in-out;
     z-index: 2;
+  }
+
+  &__btn {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 520px) {
+  .direction {
+    transition: all 0.3s ease-in-out;
+
+    width: 100%;
+    height: 60px;
+
+    background-size: cover;
+    background-position: center 0;
+
+    &__overlay {
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      padding: 20px 10px;
+      top: 0;
+      gap: 10px;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__text {
+      display: none;
+      margin: 0;
+      visibility: collapse;
+      font-size: 16px;
+
+      // display: none;
+      margin: 0;
+      color: $whiteColorText;
+      @include mainFontRegular;
+      line-height: 140%; /* 23.8px */
+      max-width: 480px;
+      opacity: 0;
+      transition: 0.6s all ease-in-out;
+      z-index: 2;
+    }
+
+    &__btn {
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      color: inherit;
+      padding: 0;
+      margin: 0;
+      display: none;
+      & svg {
+        max-height: 36px;
+        max-width: 36px;
+      }
+      display: flex;
+
+      transition: all 0.3s ease-in-out;
+    }
+
+    &_open {
+      height: 240px;
+      background-position: center 0;
+
+      .direction__overlay {
+        padding: 20px 10px;
+        justify-content: flex-start;
+      }
+
+      .direction__btn {
+        transform: rotate(180deg);
+      }
+
+      .direction__text {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .direction {
+    height: 60px;
+    background: lightgray -142.759px 0px / 201.97% 400% no-repeat;
+
+    &_open {
+      height: 240px;
+      background: lightgray -142.759px 0px / 201.97% 100% no-repeat;
+    }
   }
 }

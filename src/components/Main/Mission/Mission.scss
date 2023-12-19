@@ -2,7 +2,7 @@
 
 .mission {
   width: 100%;
-  background-color: $redColor;
+  background-color: #cb0f41;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,26 +10,42 @@
   box-sizing: border-box;
   position: relative;
   overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $redColor;
+    opacity: 0.5;
+  }
   &__pattern {
     position: absolute;
-    width: 348.054px;
-    height: 376.948px;
     background-repeat: no-repeat;
     z-index: 1;
-    // background-size: cover;
+    background-size: contain;
     flex-shrink: 0;
     &_left {
       background-image: url('./../../../images/Left_pattern.png');
-      left: -50px;
+      aspect-ratio: 348/377;
+      top: 47px;
+      bottom: 47px;
+      left: 0px;
     }
     &_right {
       background-image: url('./../../../images/Right_pattern.png');
+
+      aspect-ratio: 348/377;
+      top: 47.03px;
+      bottom: 47.03px;
       right: -50.71px;
     }
   }
   &__text {
     display: flex;
     flex-direction: column;
+    max-width: 1110px;
     gap: 40px;
     align-items: center;
     z-index: 2;
@@ -50,6 +66,84 @@
       @include mainFontRegular;
       font-size: 32px;
       line-height: 150%; /* 48px */
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mission {
+    padding: 100px 0;
+
+    &__text {
+      max-width: 650px;
+      gap: 30px;
+      &-title {
+        font-size: 48px;
+      }
+      &-subtitle {
+        font-size: 26px;
+        line-height: 130%; /* 48px */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mission {
+    padding: 80px 0;
+    &__text {
+      max-width: 450px;
+      gap: 20px;
+      &-title {
+        font-size: 40px;
+      }
+      &-subtitle {
+        font-size: 20px;
+      }
+    }
+
+    &__pattern {
+      &_left {
+        top: 30.3px;
+        bottom: 21.3px;
+        left: 0px;
+      }
+      &_right {
+        top: 30px;
+        bottom: 22.2px;
+        right: -44px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mission {
+    margin-top: -70px;
+    padding: 32px 0;
+    &__text {
+      max-width: 280px;
+      gap: 10px;
+      &-title {
+        font-size: 28px;
+      }
+      &-subtitle {
+        font-size: 16px;
+        white-space: pre-wrap;
+      }
+    }
+
+    &__pattern {
+      &_left {
+        top: 20.3px;
+        bottom: 11.3px;
+        left: 0px;
+      }
+      &_right {
+        top: 20px;
+        bottom: 12.2px;
+        right: -34px;
+      }
     }
   }
 }

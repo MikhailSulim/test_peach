@@ -20,3 +20,30 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .info {
+    padding: 70px 75px;
+    &__text {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    padding: 35px 25px;
+    &__text {
+      font-size: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .info {
+    padding: 24px 5px;
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

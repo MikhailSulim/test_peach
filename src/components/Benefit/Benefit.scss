@@ -34,3 +34,23 @@
     white-space: pre-wrap;
   }
 }
+
+@media screen and (max-width: 520px) {
+  .benefit {
+    max-width: 120px;
+    width: 100%;
+
+    //TODO проверить opacity у иконок
+    &__icon {
+      width: 80px;
+      height: 80px;
+      & svg {
+        max-height: 34.9px;
+        max-width: 50px;
+      }
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+}

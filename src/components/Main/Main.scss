@@ -7,3 +7,34 @@
   flex-direction: column;
   gap: 100px;
 }
+
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 520px) {
+  .main {
+    margin: 0 10px;
+    max-width: 500px;
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .main {
+    margin: 0 5px;
+    // max-width: 290px;
+    width: 100%;
+    // width: 100%;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 50px;
+  }
+}
