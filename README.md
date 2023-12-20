@@ -22,4 +22,5 @@ https://mikhailsulim.github.io/test_peach/
 - SCSS 
 - BEM
 - React Swipeable
+- Pixel Perfect
 - Github Pages
