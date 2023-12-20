@@ -25,14 +25,15 @@ export const BusinessDirection: React.FC<BusinessDirectionProps> = ({
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const winWidth = useWindowWidth();
 
-  useEffect(()=>{
+  useEffect(() => {
     winWidth > 520 ? setIsMobile(false) : setIsMobile(true);
-  },[winWidth]);
+  }, [winWidth]);
 
-  // const blockClassName = `direction${isMobile ? '_mobile' : ''}`;
   return (
     <div
-      className={`direction ${isMobile ? '' :'direction_full'}${isBlockOpen ? 'direction_open' : ''}`}
+      className={`direction ${isMobile ? '' : 'direction_full'}${
+        isBlockOpen ? 'direction_open' : ''
+      }`}
       style={{ backgroundImage: `url(${background})` }}
     >
       <div className="direction__overlay">
@@ -46,7 +47,11 @@ export const BusinessDirection: React.FC<BusinessDirectionProps> = ({
             <Icon iconId="arrDownDir" />
           </button>
         </h3>
-        <p className={`${isMobile ? 'direction__text' :'direction__text_full'}`}>{text}</p>
+        <p
+          className={`${isMobile ? 'direction__text' : 'direction__text_full'}`}
+        >
+          {text}
+        </p>
       </div>
     </div>
   );

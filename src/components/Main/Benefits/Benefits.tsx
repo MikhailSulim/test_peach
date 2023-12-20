@@ -33,7 +33,7 @@ export const Benefits: React.FC = () => {
             доплата 12% от суммы
           </span>
         </h3>
-        <div className="benefits__container">
+        <div className="benefits__container benefits__container_extra">
           <Benefit iconId="printer" text="Оргтехники" />
           <Benefit iconId="dms" text="ДМС" />
           <Benefit iconId="house" text="Ипотеки" />

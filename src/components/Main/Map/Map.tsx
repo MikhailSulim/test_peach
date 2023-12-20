@@ -93,26 +93,25 @@ export const Map: React.FC = () => {
 
   const DrawerContainer: React.FC = () => {
     return isDrawerShow ? (
-      // <div
-      // className={`map__drawer ${isDrawerShow ? 'map__drawer_visible' : ''}`}
-      // >
       <div className="map__drawer-container">
         {OFFICES.map((region) => (
           <RegionColumn key={region.region} region={region} />
         ))}
       </div>
-      // </div>
-    ) : (<></>);
+    ) : (
+      <></>
+    );
   };
 
   return (
     <section className="map">
-      
-      {!isRegionsMobile && <div
-        className={`map__drawer ${isDrawerShow ? 'map__drawer_visible' : ''}`}
-      >
-        <DrawerContainer />
-      </div>}
+      {!isRegionsMobile && (
+        <div
+          className={`map__drawer ${isDrawerShow ? 'map__drawer_visible' : ''}`}
+        >
+          <DrawerContainer />
+        </div>
+      )}
 
       <div className="map__header">
         <div
@@ -125,7 +124,7 @@ export const Map: React.FC = () => {
           <Icon iconId="arrDown" />
         </div>
 
-        {isDrawerShow ? (
+        {isDrawerShow && isRegionsMobile ? (
           <DrawerContainer />
         ) : (
           <nav

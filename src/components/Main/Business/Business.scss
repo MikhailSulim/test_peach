@@ -41,9 +41,6 @@
 
 @media screen and (max-width: 768px) {
   .business {
-    // padding: 0 20px;
-    // box-sizing: border-box;
-    // gap: 30px;
     &__title {
       font-size: 44px;
     }
@@ -56,10 +53,9 @@
   }
 }
 
-
 @media screen and (max-width: 520px) {
   .business {
-    padding: 0 12px;
+    padding: 0 5px;
     gap: 15px;
     &__title {
       font-size: 28px;

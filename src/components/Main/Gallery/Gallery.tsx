@@ -83,7 +83,7 @@ export const Gallery: React.FC = () => {
         </div>
       </div>
     ),
-    [currentImage, images]
+    [currentImage, handlerSwipe, images]
   );
 
   return (

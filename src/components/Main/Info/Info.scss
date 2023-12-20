@@ -24,6 +24,7 @@
 @media screen and (max-width: 1024px) {
   .info {
     padding: 70px 75px;
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.08);
     &__text {
       font-size: 28px;
     }
@@ -33,6 +34,7 @@
 @media screen and (max-width: 768px) {
   .info {
     padding: 35px 25px;
+    box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.08);
     &__text {
       font-size: 20px;
     }
@@ -41,7 +43,9 @@
 
 @media screen and (max-width: 520px) {
   .info {
+    margin-top: 10px;
     padding: 24px 5px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.08);
     &__text {
       font-size: 16px;
     }

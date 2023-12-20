@@ -1,8 +1,7 @@
 @import './../../styles/global.scss';
 
 .benefit {
-  max-width: 178px;
-  width: 100%;
+  width: 178px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,12 +34,16 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .benefit {
+    max-width: 130px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 520px) {
   .benefit {
-    max-width: 120px;
-    width: 100%;
-
-    //TODO проверить opacity у иконок
+    max-width: 110px;
     &__icon {
       width: 80px;
       height: 80px;

@@ -295,7 +295,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           <g fill="none" width="5" height="5" transform="translate(971.63 574)">
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="-2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="16"
@@ -315,7 +315,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="14"
@@ -327,7 +327,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           <g fill="none" width="5" height="5" transform="translate(511 453.74)">
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -361,7 +361,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -378,7 +378,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="14"
@@ -398,7 +398,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="14"
@@ -415,7 +415,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -432,7 +432,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -449,7 +449,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="14"
@@ -461,7 +461,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           <g fill="none" width="5" height="5" transform="translate(433 311.18)">
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -478,7 +478,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="14"
@@ -498,7 +498,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="4"
+              y="28"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="16"
@@ -515,7 +515,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="4"
+              y="28"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -535,7 +535,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="5"
+              y="26"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="14"
@@ -550,7 +550,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           <g fill="none" width="5" height="5" transform="translate(179 196.9)">
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="5"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -567,7 +567,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="5"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -584,7 +584,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="5"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -604,7 +604,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -621,7 +621,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -638,7 +638,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -651,11 +651,11 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
             fill="none"
             width="5"
             height="5"
-            transform="translate(241.17 342.18)"
+            transform="translate(253.17 335.18)"
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="27"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -672,7 +672,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -692,7 +692,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="14"
@@ -709,7 +709,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="12"
@@ -726,7 +726,7 @@ export const MapRF: React.FC<MapRFProps> = ({ currentRegion }) => {
           >
             <circle cx="4.5" cy="4.74121" r="4" fill="#444444" />
             <text
-              y="2"
+              y="25"
               textAnchor="middle"
               alignmentBaseline="middle"
               fontSize="14"

@@ -7,7 +7,7 @@
   align-items: center;
   width: 100%;
   box-sizing: border-box;
-  padding: 30px 70px;
+  padding: 33px 70px 27px;
   max-width: 1250px;
   &__logo svg {
     max-width: 125px;
@@ -35,11 +35,12 @@
 @media screen and (max-width: 1024px) {
   .header {
     padding: 16px 35px;
-    gap: 50px;
+    gap: 10px;
+    flex-wrap: wrap;
     &__nav-menu {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5px 10px;
+      width: 100%;
+      justify-content: space-between;
+      gap: 5px ;
     }
   }
 }
@@ -52,15 +53,28 @@
     align-items: flex-start;
 
     &__nav-menu {
-      align-self: center;
+      flex-wrap: wrap;
+      gap:5px 15px ;
+      justify-content: center;
     }
   }
 }
 
 @media screen and (max-width: 520px) {
   .header {
-    padding: 16px 5px;
-    max-width: 290px;
+    gap: 12px;
+    margin: 0 15px;
+    padding: 8px 11px 11px;
+
+    &__nav-menu {
+      display: grid;
+      width: 100%;
+      grid-template-columns: auto auto;
+      justify-content: space-evenly;
+      padding: 0 5px 0 2px;
+      box-sizing: border-box;
+      gap: 4px 11px;
+    }
 
     &__nav-item {
       font-size: 14px;

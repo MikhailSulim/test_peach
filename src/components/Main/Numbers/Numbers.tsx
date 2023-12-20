@@ -17,7 +17,7 @@ export const Numbers: React.FC = () => {
     const options: IntersectionObserverInit = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5, // Adjust this threshold as needed
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver(observerCallback, options);

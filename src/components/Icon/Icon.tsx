@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 type IconProps = {
   iconId: string;
@@ -6,10 +6,10 @@ type IconProps = {
 
 const Icon: React.FC<IconProps> = ({ iconId }) => {
   return (
-    <svg >
+    <svg>
       <use xlinkHref={`images/sprite.svg#${iconId}`} />
     </svg>
   );
 };
 
-export default Icon
+export default Icon;

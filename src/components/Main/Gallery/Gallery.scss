@@ -9,12 +9,13 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 58px;
+  gap: 54px;
   padding-bottom: 70px;
   &__header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -29,6 +30,7 @@
     font-size: 56px;
     line-height: 100%; /* 56px */
     margin: 0;
+    padding-top: 3px;
   }
   &__navigation {
     display: -webkit-box;
@@ -233,19 +235,30 @@
 
 @media screen and (max-width: 520px) {
   .gallery {
-    margin: 0 7px;
+    margin: -2px 7px;
     gap: 15px;
     &__title {
       font-size: 28px;
     }
 
     &__slider {
-      gap: 18px;
+      gap: 10px;
 
       &-image {
         max-height: 500px;
       }
     }
+    &__pagination {
+      gap: 5px;
+      &-item {
+        height: 4px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .gallery {
     &__pagination {
       display: none;
     }

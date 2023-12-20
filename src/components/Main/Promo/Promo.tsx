@@ -12,7 +12,7 @@ export const Promo: React.FC = (): JSX.Element => {
     <section className="promo">
       <div className="promo__content">
         <h1 className="promo__title">
-          Поставщик услуг цифровой трансформации и&nbsp;кибербезопасности
+          Поставщик&nbsp;услуг цифровой трансформации и&nbsp;кибербезопасности
         </h1>
         <Link to="https://softline.ru" className="promo__button">
           На сайт
